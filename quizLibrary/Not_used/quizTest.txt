@@ -1,0 +1,8 @@
+Quest="aasdas"
+Image=""
+Choice_1="sadas"
+Choice_2="sadasd"
+Choice_3="sadas"
+Choice_4="successul"
+Answer="3"
+Explanation="success"

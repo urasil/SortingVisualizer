@@ -1,0 +1,8 @@
+Quest="Which of the following arrays is a result of the first pass of Bubble Sort on the unsorted array [5, 2, 8, 12, 7]?"
+Image=""
+Choice_1="[2, 5, 8, 7, 12]"
+Choice_2="[5, 2, 7, 8, 12]"
+Choice_3="[2, 5, 7, 8, 12]"
+Choice_4="[5, 2, 8, 7, 12]"
+Answer="1"
+Explanation="During the first pass of Bubble Sort, the algorithm compares adjacent elements in the array and swaps them if they are in the wrong order. After the first pass on the unsorted array [5, 2, 8, 12, 7], the first two elements are swapped, resulting in the array [2, 5, 8, 7, 12]. The algorithm then continues to make passes over the array until it is completely sorted."

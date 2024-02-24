@@ -1,0 +1,47 @@
+bubble_sort:::
+Bubble Sort repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+It's easy to understand and implement and works well for small data sets.
+It's not suitable for data sets that are nearly sorted.
+It's In-Place and Stable.
+Time complexity: O(n^2).
+Space complexity: O(1).
+
+heap_sort:::
+Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. In heap sort, the binary heap is created first and then the elements are extracted one by one and added to the sorted array.
+It's faster than bubble sort, selection sort, and insertion sort for large data sets and performs well in practice and is used in real-world applications.
+But the memory usage can be higher than other sorting algorithms.
+It's In-Place and Unstable.
+Time complexity: O(n log n).
+Space complexity: O(1).
+
+insertion_sort:::
+Insertion sort is an algorithm that picks an element in the array and inserts it into the correct position relative to every element it can check it with that comes before it.
+It is much less efficient on large lists than more advanced algorithms and not suitable for data sets that are mostly unsorted.
+It's In-Place and Stable.
+Time complexity: O(n^2).
+Space complexity: O(1).
+
+selection_sort:::
+Selection Sort repeatedly selects the smallest element from an unsorted list and swaps it with the first element of the list until the entire list is sorted.
+It's not efficient on large data sets and not suitable for data sets that are mostly unsorted.
+It's In-Place and Unstable.
+Time complexity: O(n^2).
+Space complexity: O(1).
+
+merge_sort:::
+Merge Sort is a divide-and-conquer algorithm that divides a list into smaller sub-lists, sorts those sub-lists, and then merges them to create a sorted list.
+It's guaranteed to perform at its worst-case time complexity and can sort data sets too large to fit into memory.
+It requires additional memory to store the sub-lists during the sorting process and not as efficient as quicksort for small data sets.
+It's used in network routing algorithms.
+It's Out-Place and Stable.
+Time complexity: O(n log n).
+Space complexity: O(n).
+
+quick_sort:::
+Quick Sort selects a 'pivot' element from an array and partitions the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
+It's fast for large data sets and efficient use of memory.
+It's used in many programming languages' standard libraries for sorting.
+It's In-Place and Unstable.
+Time complexity: O(n log n) (average case), O(n^2) (worst case).
+Space complexity: O(log n) on average, O(n) in worst case.
+

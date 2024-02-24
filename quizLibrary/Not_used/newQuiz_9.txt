@@ -1,0 +1,8 @@
+Quest="Which of the following arrays is a part of the steps involved in sorting the given array using Quick Sort? [14, 33, 27, 10, 35, 19, 48, 44]"
+Image=""
+Choice_1="[10, 14, 27, 19, 33, 35, 44, 48]"
+Choice_2="[10, 14, 19, 27, 33, 35, 44, 48]"
+Choice_3="[14, 10, 27, 19, 33, 35, 44, 48]"
+Choice_4="[14, 10, 27, 19, 33, 44, 35, 48]"
+Answer="2"
+Explanation="Quick Sort involves partitioning the array into two smaller sub-arrays, one with elements smaller than a chosen pivot element and another with elements greater than or equal to the pivot. The partitioning process involves moving elements around until the partition is complete. The array shown in option (b) is a part of the sorted array after partitioning around the pivot."

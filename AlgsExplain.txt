@@ -1,0 +1,109 @@
+bubble_sort:::
+- The first element(10) is larger than the second element (3), so swap.
+- The second element (now 10) is larger than the third element (1), so swap.
+- This constant checking and swapping continues in each and every step until the end of the array is reached. 
+When the end of the array is reached, it means that the largest element in the array has been put in its place, which is the end of the array. 
+So after the first iteration 10 will be at the end of the array.
+- The largest element (10) in the array being put in its place means that the first iteration is complete. 
+Now the algorithm will go back to the first element (now 3) of the array and start checking and swapping again.
+- If the first element (3) is larger than the second element (now 1) of the array, they will be swapped if not they will remain in place (they will be swapped since 3 > 1). 
+In the second iteration, the second largest element will be put in its place which is 9.
+- These steps will continue until there has been as many iterations as the length of the array, which ensures that every
+element in the array has been put in their place.
+
+
+heap_sort:::
+- The initialization step of the heap sort algorithm is to build a max heap structre from the given input array. 
+- This is done by repeatedly calling sink on the elements of the array. This method compares the parent nodes with child nodes,  and swaps them if its necessary to build a max heap. 
+In the initialization of the max heap, in this given array, 10 will be the root node.
+For reference, the max heap will be represented as [10,9,7,4,8,6,1,2,3,5]
+- The root element will be the largest element in the array after each sink operation. 
+So in the first step, the root element (10) is swapped with the last element (5). Now 10 is in its place. 
+Sink is again called on the array to restore max heap structre. 
+5 will be moved down and the second largest element (9) will become the root node. 
+For reference [9,8,7,4,5,6,1,2,3,10]
+For the second step, the root element (now 9) is swapped with the second last element (3) in the array, since the 
+last element is already sorted and is in its right place. Sink is called to restore the max heap structre.
+- These steps will be repeated until the input array is sorted. 
+The length of the input array is 8. Hence if we apply these steps 8 times, the input array will definetly be sorted(largest element in the unsorted portion of the array will be put in place in every step). 
+We can say that heap sort is an in-place algorithm.
+
+
+insertion_sort:::
+- Insertion sort is an algorithm that picks an element in the array and inserts it into the correct position relative to every element it can check it with that comes before it. 
+- In the first step, element at the first index of the array is picked (3) and it is compared against every element  before it, which is only 10. They are swapped since 10 is bigger than 3.
+- In the second step, element at the second index of the array is picked (1) and compared against every element before it.
+Firstly it is checked against 10, since 10 > 1 it is moved to index one and checked against 3, since 3 > 1 it is moved to index zero. 
+- In the third step, element at third index (9) is picked and compared against the elements before it. 
+Firstly it is compared against 10, since 10 > 9 it is moved down. 
+Then it is compared against 3, since 9 > 3 algorithm stops checking here. 9 is in place relative to the elements its been compared against. 
+Hence the algorithm keeps checking until the element is bigger than one of the elements it is being compared against.
+- This process continues until the last element in the array is checked with the elements before it. 
+Hence, the process is repeated as many times as the length of the input array. 
+We can say that insertion sort is an in-place algorithm that has a relative time complexity to the input array it has been given.
+
+
+selection_sort:::
+- In the first step of the algorithm, the whole array is traversed starting from index zero and the minimum element is found which is 1 at index two. 
+The minimum element (1) is then swapped with the element at index zero.
+[1, 3, 10, 9, 8, 6, 7, 2, 4, 5]
+- In the second step, the array is traversed again but this time, it starts from index one. 
+Now the second smallest element which is 2 is swapped with the element at index one.
+[1, 2, 10, 9, 8, 6, 7, 3, 4, 5]
+- If at the third step, element 3 was at index 2 -> [1, 2, 3, 9, 8, 6, 7, 10, 4, 5] then there would be no swap since the minimum value is already in the desired position.
+- The array will be traversed starting to the right of the index that is swapped for each step. 
+This means that if we found the third smallest element in the array and swapped it with the element at index 2, then the next step will start traversing the list from index 3.
+- The number of steps that this algorithm will take is equal to the length of the array. 
+This is an in-place algorithm that doesn't depend on the input array because the algorithm will traverse the list to find a minimum no matter how sorted the given input array is.
+The fixed array: [10, 3, 1, 9, 8, 6, 7, 2, 4, 5]
+Length of the array = 10
+
+
+merge_sort:::
+- Merge sort is a recursive divide and conquer algorithm that divides the array into smaller smaller components until the small partition of the array is sorted by definition.
+- In the first step, the algorithm divides the fixed array by finding the middle point of the array. 
+The length of the array is 10 so there are 9 elements in it. 
+Therefore the lower index is 0 and the upper index is 9 and hence the index of the middle point is four(integer division). 
+So the left partition of the array is [10,3,1,9,8]. Now sort is called recursively on this array.
+- In the second step the lower index is 0 and the upper index is 4 therefore the middle index is going to be two. 
+Hence the array becomes [10,3,1] (This is actually handled by the lower, middle and upper pointers but thinking of it as an array is much easier for understanding). 
+Sort is recursively called again. 
+- In the third step the lower index is 0 and the upper index is 2 therefore the middle index is going to be one. 
+Hence the array becomes [10,3]. Sort is recursively called again.
+- In the fourth step the lower index is 0 and the upper index is 1 therefore the middle index is going to be 0. 
+Hence the array becomes [10]. Sort is recursively called again.
+- In the fifth step the lower and the upper index are equal hence we have exhausted the first recursive sort statement.
+We will now move on to the second sort statement that will be called upon the array [10,3].
+- In the sixth step the second sort statement is called which goes from mid+1 to upper index. mid is 0 hence the sort is called from index 1 to index 1 meaning mid+1 = upper. 
+Therefore the second sort statement is also exhauseted.
+- In the seventh step, the merge statement is called for the first time. In theory, we have two arrays that are sorted by definition, [3] and [10]. 
+When we merge since 10 > 3, the array will look like [3,10].
+- We have now exhausted the recursive call on array [10,3] therefore we go back to the previous recursive which made us call sort on [10,3], which is [10,3,1]. 
+So now we are at the second sort call for [3,10,1] (remember 3 and 10 was swapped).
+mid index was 1 so mid+1 = upper therefore we obtain the singleton array [1].
+- In the nineth step merge is called again and we obtain [1,3,10] by calling our merge function.
+- Exhausting a recursive sort call and eventually merging the sorted array partitions is the key idea of merge sort. 
+Eventually merge will be called on partitions [1,3,8,9,10] and [2,4,5,6,7] and the array will be sorted. 
+This algorithm makes use an auxiliary array and is not in-place.
+
+
+
+quick_sort:::
+- Similar to merge sort, quick sort is also a recursive divide and conquer sorting algorithm.
+- In the first step quick sort shuffles the given input array. 
+This is to ensure that the pivot element that is going to be selected for the partitioning step is random. 
+For reference [6,1,2,9,10,5,8,4,3,7]
+- In the second step elements are partitioned compared to the pivot element. 
+Elements that are larger than the pivot and elements that are smaller than the pivot are seperated into two partitions. 
+[6,1,2,5,4,3,8,10,9,7] This is done by keeping lowe and upper pointers. At the end of the process lower and upper pointers are equal at index 5 and it is swapped with current pivot 6 and returned. 
+For reference the two partitions are [3,1,2,5,4] and [8,10,9,7]
+- In the third step the first sort is called on the first partition.
+The pivot element is going to be 3 and the array is going to be partitioned just like in the second step. [1,2] and [5,4] will be the partitions.
+- In the fourth step when partition is called on [1,2] no swapping takes place and the upper and lower pointers equal each other we get out of the partition step.
+The first recursive sort is exhausted hence we go back to the previous recursive call which was on [3,1,2,5,4]. Now the second sort is called on the secon parition which was [5,4].
+- In the fifth step, since 5>4 they swap places and the lower and upper pointers equal each other. 
+Hence we go back to the previous recursive call whcih was [6,1,2,9,10,5,8,4,3,7] hence the second sort will be called on [8,10,9,7]. 
+For reference the first half of the array is now completely sorted and looks like [1,2,3,4,5].
+- By following the recursive steps eventually the array will be sorted. 
+Qucik sort is an in-place algorithm that has a large dependency on how close the partitions are in size. 
+In this example the partitions are quite well done however if the pivot was 9 initially then the partitions would be quite poor and the algorithm would have been much slower.

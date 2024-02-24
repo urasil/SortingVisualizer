@@ -1,0 +1,8 @@
+Quest="Which sorting algorithm is most suitable for sorting a small array of integers?"
+Image=""
+Choice_1="Quick Sort"
+Choice_2="Bubble Sort"
+Choice_3="Selection Sort"
+Choice_4="Merge Sort"
+Answer="2"
+Explanation="Bubble Sort is a simple sorting algorithm that performs well for small arrays."

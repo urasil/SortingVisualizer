@@ -1,0 +1,8 @@
+Quest="What is the time and space complexity of merge sort respectively?"
+Image=""
+Choice_1="O(nlogn) and O(n)"
+Choice_2="O(nlogn) and O(n^2)"
+Choice_3="O(logn) and O(n)"
+Choice_4="O(n) and O(n)"
+Answer="1"
+Explanation="It recursively divides the input array into halves and then merges the sorted halves"

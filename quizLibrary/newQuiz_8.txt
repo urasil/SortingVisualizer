@@ -1,0 +1,8 @@
+Quest="Which sorting algorithm is an adaptive sorting algorithm that can take advantage of partially sorted data?"
+Image=""
+Choice_1="Merge Sort"
+Choice_2="Insertion Sort"
+Choice_3="Bubble Sort"
+Choice_4="Heap Sort"
+Answer="2"
+Explanation="Insertion Sort is an adaptive sorting algorithm that can take advantage of partially sorted data, making it a good choice for small data sets or data that is already partially sorted."

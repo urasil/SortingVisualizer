@@ -1,0 +1,8 @@
+Quest="Which sorting algorithm has the worst time complexity?"
+Image=""
+Choice_1="Bubble Sort"
+Choice_2="Selection Sort"
+Choice_3="Insertion Sort"
+Choice_4="Merge Sort"
+Answer="1"
+Explanation="Bubble Sort has a time complexity of O(n^2) which makes it the least efficient sorting algorithm. Though Selection Sort and Insertion Sort also have time complexity of O(n^2), Bubble Sort has comparison times."

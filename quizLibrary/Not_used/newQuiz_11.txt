@@ -1,0 +1,8 @@
+Quest="In which case it would be best use mergesort rather than another sorting algorithm?"
+Image=""
+Choice_1="List already sorted"
+Choice_2="Sorting a linked list"
+Choice_3="Sorting very large datasets"
+Choice_4="Sorting very small datasets"
+Answer="2"
+Explanation="Mergesort is good at sorting a linked list because it doesn't require random access to elements, and its divide-and-conquer approach efficiently handles the merging of smaller sublists."

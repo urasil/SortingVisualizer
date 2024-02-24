@@ -1,0 +1,8 @@
+Quest="If the starting list is [4,2,3,1] how would the list look after the first merge call?"
+Image=""
+Choice_1="[4,2,3,1]"
+Choice_2="[2,4,1,3]"
+Choice_3="[2,4,3,1]"
+Choice_4="[1,2,3,4]"
+Answer="2"
+Explanation="Sorted parts which are elements 4 and 2 would merge and produce [2,4,3,1]"

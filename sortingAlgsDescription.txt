@@ -1,0 +1,21 @@
+Bubble Sort - A sorting algorithm that repeatedly steps through the array, comparing adjacent elements 
+and swaps them if they are in the wrong order, putting the largest element at the end in every iteration. 
+
+Insertion Sort - A sorting algorithm that sorts the array by putting one element at the sorted position in 
+every iteration. The smallest element in every iteration is brought to the correct position, moving the element 
+downwards if its smaller than its previous elements.
+
+Merge Sort - A divide-and-conquer algorithm that divides the input array into two halves and sorts 
+each half recursively (eventually leaving an array with one element that is sorted by definition), and then 
+merges the sorted halves to produce the final sorted array.
+
+Heap Sort - A sorting algorithm that builds a binary heap and then repeatedly extracts the maximum element from 
+the heap and puts it at the end of the array until the array is sorted. It is an in-place algorithm since binary
+heap is represented as an array.
+
+Selection Sort - A sorting algorithm that iterates through an array and repeatedly selects the minimum element from 
+the unsorted portion of the array and puts it in its place until the entire array is sorted.
+
+Quick Sort - A divide-and-conquer algorithm that selects a pivot element from the input array and partitions all remaining 
+elements into sub-arrays according to whether they are less than or greater than the pivot. It then recursively applies 
+quick sort on the partitions (until partitions are singleton arrays) and combines them to produce the final sorted array.

@@ -1,0 +1,8 @@
+Quest="Which sorting algorithm is used in Java's Arrays.sort() method?"
+Image=""
+Choice_1="Merge Sort"
+Choice_2="Quick Sort"
+Choice_3="Heap Sort"
+Choice_4="Selection Sort"
+Answer="2"
+Explanation="Quick Sort is used in many programming languages' standard libraries for sorting."

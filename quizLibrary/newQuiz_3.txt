@@ -1,0 +1,8 @@
+Quest="Which sorting algorithm is not an in-place sorting algorithm?"
+Image=""
+Choice_1="Quick Sort"
+Choice_2="Merge Sort"
+Choice_3="Bubble Sort"
+Choice_4="Insertion Sort"
+Answer="2"
+Explanation="Merge Sort requires additional memory to store the result while sorting, which means it is not an in-place sorting algorithm."

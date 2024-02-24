@@ -1,0 +1,8 @@
+Quest="Is merge sort in place and stable?"
+Image=""
+Choice_1="in-place, not stable"
+Choice_2="not in-place, not stable"
+Choice_3="in-place, stable"
+Choice_4="not in-place, stable"
+Answer="4"
+Explanation="Merge sort uses an auxiliary array and keeps the relative order of the elements with equal keys"

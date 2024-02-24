@@ -1,0 +1,8 @@
+Quest="Which of the following algorithms is unstable"
+Image="/resources/insertionSort/2.jpg"
+Choice_1=”Merge sort” 
+Choice_2=”Selection sort” 
+Choice_3=”Quick sort” 
+Choice_4=”Insertion sort”
+Answer="2"
+Explanation="Example explanation"

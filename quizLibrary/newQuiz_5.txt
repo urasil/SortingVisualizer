@@ -1,0 +1,8 @@
+Quest="Which sorting algorithm is a stable sorting algorithm?"
+Image=""
+Choice_1="Quick Sort"
+Choice_2="Heap Sort"
+Choice_3="Selection Sort"
+Choice_4="Merge Sort"
+Answer="4"
+Explanation="Merge Sort is a stable sorting algorithm, meaning that it maintains the relative order of equal elements in the original array."
